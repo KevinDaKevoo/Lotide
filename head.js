@@ -7,7 +7,11 @@ const assertEqual = function(actual, expected) {
 };
 
 const head = function(x) {
-  return x[0];
+  if (x.length > 0) {
+  return x[0]
+  } else {
+    
+  };
 };
 assertEqual(head([5,6,7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
