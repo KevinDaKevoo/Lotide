@@ -29,3 +29,5 @@ let answer3 = eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
 let answer4 = eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
 console.log('answer3', answer3);
 console.log('answer4', answer4);
+
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
