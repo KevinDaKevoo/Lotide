@@ -17,17 +17,17 @@ const assertArraysEqual = function(x, y) {
   }
 };
 
-const middle = function (removeMiddleItem) {
-  var midNum = Math.floor(removeMiddleItem.length / 2);
+const middle = function(removeMiddleItem) {
+  let midNum = Math.floor(removeMiddleItem.length / 2);
   let result = [];
   for (let j = 0; j < removeMiddleItem.length; j++) {
     if (j === midNum || j === midNum + 1) {
     } else {
-      result.push(removeMiddleItem[j])
+      result.push(removeMiddleItem[j]);
     }
   }
-  console.log(midNum)
+  console.log(midNum);
   return result;
-}
+};
 
-console.log (middle([1,2,3,4,5,6]))
+console.log(middle([1,2,3,4,5,6]));
